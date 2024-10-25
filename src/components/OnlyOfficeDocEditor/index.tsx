@@ -1,3 +1,4 @@
+import { NETWORK_IP, PORT } from "@/data/fileData";
 import { DocumentEditor } from "@onlyoffice/document-editor-react";
 
 type DocumentFileType = "xlsx" | "pptx" | "docx" | "pdf" | "doc";
@@ -96,8 +97,8 @@ const OnlyOfficeDocEditor = ({
               customer: {
                 address: "My City, 123a-45",
                 info: "Some additional information",
-                logo: "http://192.168.8.152:3001/FileFlex.svg",
-                logoDark: "http://192.168.8.152:3001/FileFlexDark.svg",
+                logo: `http://${NETWORK_IP}:${PORT}/FileFlex.svg`,
+                logoDark: `http://${NETWORK_IP}:${PORT}/FileFlexDark.svg`,
                 mail: "john@example.com",
                 name: "John Smith and Co.",
                 phone: "123456789",
@@ -107,7 +108,7 @@ const OnlyOfficeDocEditor = ({
               goback: {
                 blank: false,
                 text: "Open file location",
-                url: "http://192.168.8.152:3001/",
+                url: `http://${NETWORK_IP}:${PORT}/`,
               },
               // feedback: true,
               feedback: {
@@ -119,10 +120,10 @@ const OnlyOfficeDocEditor = ({
               hideRulers: false,
               // integrationMode: "embed",
               logo: {
-                image: "http://192.168.8.152:3001/FileFlex.svg",
-                imageDark: "http://192.168.8.152:3001/FileFlexDark.svg",
-                imageEmbedded: "http://192.168.8.152:3001/FileFlex.svg",
-                url: "http://192.168.8.152:3001/",
+                image: `http://${NETWORK_IP}:${PORT}/FileFlex.svg`,
+                imageDark: `http://${NETWORK_IP}:${PORT}/FileFlexDark.svg`,
+                imageEmbedded: `http://${NETWORK_IP}:${PORT}/FileFlex.svg`,
+                url: `http://${NETWORK_IP}:${PORT}/`,
               },
               // macros: true,
               // macrosMode: "Warn",
